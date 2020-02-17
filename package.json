@@ -6,9 +6,13 @@
     "start:dev": "webpack-dev-server --config webpack.config.dev.js --port 3000",
     "prestart:api": "node tools/createMockDb.js",
     "start:api": "node tools/apiServer.js",
-    "test": "jest",
-    "test:ci": "jest --watchAll",
-    "build": "webpack --config webpack.config.prod.js"
+    "test": "jest --watchAll",
+    "test:ci": "jest",
+    "clean:build": "rimraf ./build && mkdir build",
+    "prebuild": "run-p clean:build test:ci",
+    "build": "webpack --config webpack.config.prod.js",
+    "postbuild": "run-p start:api serve:build",
+    "serve:build": "http-server ./build"
   },
   "jest": {
     "setupFiles": [
@@ -20,7 +24,6 @@
     }
   },
   "dependencies": {
-    "@types/node": "^13.7.1",
     "bootstrap": "4.3.1",
     "immer": "2.1.3",
     "prop-types": "15.7.2",
@@ -62,7 +65,7 @@
     "rimraf": "2.6.3",
     "style-loader": "0.23.1",
     "webpack": "4.29.6",
-    "webpack-bundle-analyzer": "3.1.0",
+    "webpack-bundle-analyzer": ">=3.3.2",
     "webpack-cli": "3.3.0",
     "webpack-dev-server": "3.2.1"
   },
