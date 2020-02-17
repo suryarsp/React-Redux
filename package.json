@@ -6,7 +6,7 @@
     "start:dev": "webpack-dev-server --config webpack.config.dev.js --port 3000",
     "prestart:api": "node tools/createMockDb.js",
     "start:api": "node tools/apiServer.js",
-    "test": "jest --watch",
+    "test": "jest --watchAll",
     "test:ci": "jest",
     "clean:build": "rimraf ./build && mkdir build",
     "prebuild": "run-p clean:build test:ci",
@@ -34,7 +34,8 @@
     "react-toastify": "4.5.2",
     "redux": "4.0.1",
     "redux-thunk": "2.3.0",
-    "reselect": "4.0.0"
+    "reselect": "4.0.0",
+    "terser-webpack-plugin": "^2.3.5"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
