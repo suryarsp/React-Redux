@@ -23,9 +23,11 @@ it("renders form and header", () => {
   expect(wrapper.find("h2").text()).toEqual("Add Course");
 });
 
+  // label needs to be `Save` 
+  // it should match the button label for saving course 
 it('labels save buttons as "Save" when not saving', () => {
   const wrapper = renderCourseForm();
-  expect(wrapper.find("button").text()).toBe("Saved");
+  expect(wrapper.find("button").text()).toBe("Save");
 });
 
 it('labels save button as "Saving..." when saving', () => {
