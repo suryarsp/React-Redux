@@ -1,5 +1,6 @@
-# Starter Kit for [Building Applications in React and Redux](http://www.pluralsight.com/author/cory-house) on Pluralsight
-
+ [Building Applications in React and Redux]
+ 
+ [![Build Status](https://dev.azure.com/rspsuriya777/rspsuriya777/_apis/build/status/suryarsp.React-Redux?branchName=master)](https://dev.azure.com/rspsuriya777/rspsuriya777/_build/latest?definitionId=13&branchName=master)
 ## Get Started
 
 1. **Install [Node 8](https://nodejs.org)** or newer. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
