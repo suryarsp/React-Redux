@@ -11,7 +11,7 @@
 
 ## Having Issues? Try these things first:
 
-1. Run `npm install` - If you forget to do this, you'll get an error when you try to start the app later.
+1. Run `npm install` - If you forget to do this, you'll get an error when you try to start the app later. 
 2. Don't run the project from a symbolic link. It will cause issues with file watches.
 3. Delete any .eslintrc in your user directory and disable any ESLint plugin / custom rules within your editor since these will conflict with the ESLint rules defined in the course.
 4. On Windows? Open your console as an administrator. This will assure the console has the necessary rights to perform installs.
