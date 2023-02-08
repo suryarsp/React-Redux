@@ -16,7 +16,7 @@
 3. Delete any .eslintrc in your user directory and disable any ESLint plugin / custom rules within your editor since these will conflict with the ESLint rules defined in the course.
 4. On Windows? Open your console as an administrator. This will assure the console has the necessary rights to perform installs.
 5. Ensure you do not have NODE_ENV=production in your env variables as it will not install the devDependencies. To check run this on the command line: `set NODE_ENV`. If it comes back as production, you need to clear this env variable.
-6. Nothing above work? Delete your node_modules folder and re-run npm install.
+6. Nothing above work? Delete your node_modules folder and re-run npm install.  
 
 ### Production Dependencies
 
